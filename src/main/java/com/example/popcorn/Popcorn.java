@@ -136,6 +136,8 @@ public class Popcorn extends Application {
 
 
         Button submitButton = new Button("Submit");
+
+
         Alert a = new Alert(AlertType.NONE);
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
@@ -169,13 +171,7 @@ public class Popcorn extends Application {
         submitButton.setOnAction(event);
         gridPane.add(submitButton, 1, 9);
 
-
-
-
         priceLabel = new Label();
-
-//////////////////////////////////////////////////////////////////////////
-
 
         Image backgroundImage = new Image(Popcorn.class.getResource("cinema.png").toString());
 
